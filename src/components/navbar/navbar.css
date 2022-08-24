@@ -1,0 +1,112 @@
+.navbar .wrapper,.navbar .right,.navbar .left{
+    display: flex;
+    align-items: center;
+}
+.navbar .wrapper{
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Grayish-blue);
+}
+.navbar .right{
+    gap: 50px;
+}
+.navbar .menu{
+    display: none;
+}
+.navbar .list{
+    display: flex;
+    gap: 30px;
+}
+.navbar .list__li{
+    color: var(--Darkgrayish-blue);
+    padding: 30px 0;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+.navbar .list__li:hover{
+    border-bottom: 3px solid var(--Orange);
+}
+.navbar .left{
+    gap: 30px;
+}
+.navbar .cart{
+    /* display: flex; */
+    position: relative;
+    cursor: pointer;
+}
+.navbar img{
+    display: block;
+}
+.number_of_items{
+    position: absolute;
+    font-size: 10px;
+    padding: 2px 9px;
+    border-radius: 20px;
+    background: var(--Orange);
+    color: var(--White);
+    right: -10px;
+    top: -8px;
+    font-weight: 700;
+}
+.navbar .user_img{
+    border-radius: 50%;
+    display: flex;
+    border: 3px solid transparent;
+    width: 50px;
+    height: auto;
+}
+.navbar .user_img img{
+    width: 100%;
+}
+.navbar .user_img:hover{
+    border-color: var(--Orange);
+}
+
+.MobileNav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--White);
+    z-index: 5;
+    font-weight: 700;
+    min-height: 100vh;
+    padding: 33px 0px;
+    padding-right: 120px;
+    padding-left: 5%;
+    font-size: 18px;
+    transition: left .8s;
+    display: none;
+}
+.MobileNav .close{
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.MobileNav .mobile__list{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 20px;
+}
+.hide {
+    left:-100% !important;
+}
+@media screen and (max-width:785px) {
+    .navbar .wrapper{
+        padding: 20px 0;
+        border: 0;
+    }
+    .navbar .list{
+        display: none;
+    }
+    .navbar .right{
+        gap: 20px;
+    }
+    .navbar .menu{
+        display: block;
+    }
+    .navbar .user_img{
+        width: 40px;
+    }
+    .MobileNav{
+        display: block;
+    }
+}
