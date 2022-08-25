@@ -1,11 +1,10 @@
 .mobile__slider__container{
     position: relative;
+    overflow-x: hidden;
 }
 .mobile__slider{
     display: grid;
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    overflow-x: hidden;
     transition: all 0.2s ease-in-out;
     scroll-behavior: smooth;
 }
