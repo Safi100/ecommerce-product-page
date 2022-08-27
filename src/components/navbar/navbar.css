@@ -1,3 +1,6 @@
+.navbar{
+    position: relative;
+}
 .navbar .wrapper,.navbar .right,.navbar .left{
     display: flex;
     align-items: center;
@@ -28,8 +31,7 @@
 .navbar .left{
     gap: 30px;
 }
-.navbar .cart{
-    /* display: flex; */
+.navbar .cart_notification{
     position: relative;
     cursor: pointer;
 }
@@ -62,7 +64,7 @@
 }
 
 .MobileNav{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: var(--White);
@@ -93,7 +95,7 @@
 }
 @media screen and (max-width:785px) {
     .navbar .wrapper{
-        padding: 20px 0;
+        padding: 18px 0;
         border: 0;
     }
     .navbar .list{
@@ -106,7 +108,7 @@
         display: block;
     }
     .navbar .user_img{
-        width: 40px;
+        width: 35px;
     }
     .MobileNav{
         display: block;
