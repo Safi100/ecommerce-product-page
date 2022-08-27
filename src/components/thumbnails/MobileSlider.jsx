@@ -11,18 +11,16 @@ const MobileSlider = () => {
   const ImageArray =[Img1,Img2,Img3,Img4]
   const [index,setIndex] = useState(0)
   const HandleIndex = (button) => {
-   if(button === "Right") {setIndex(index+1)}
-   if(button === "Left") {setIndex(index-1)}
+   if(button === "Right") {
+    let a = (index < 3) ? setIndex(index+1) : ""
+   }
+   if(button === "Left") {
+    let a =(index > 0) ? setIndex(index-1) : ""
+   }
 
   }
-
-  useEffect(()=>{    console.log("new index : " , index);})
   useEffect(()=>{
-    if (index > 3 ) setIndex(3) 
-    if (index < 0) setIndex(0)
-    if(index < 4 && index >= 0){
-     document.querySelector('.mobile__slider').style.transform=`translateX(${-(index * 100)}vw)`
-    }
+    document.querySelector('.mobile__slider').style.transform=`translateX(${-(index * 100)}vw)`
   },[index])
 
   return (
