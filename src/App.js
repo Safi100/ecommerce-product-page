@@ -21,9 +21,9 @@ const App = () => {
       <Navbar
       counterInsideCart={counterInsideCart}
       setCounterInsideCart={setCounterInsideCart}
-      price={priceAfterDiscount}/>
-      <MobileSlider
+      price={priceAfterDiscount}
       />
+      <MobileSlider/>
       <div className='wrapper'>
        <ProductInfo
         price={price}
