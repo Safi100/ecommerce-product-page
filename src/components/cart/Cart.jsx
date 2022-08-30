@@ -6,7 +6,6 @@ const Cart = ({counterInsideCart, setCounterInsideCart, price}) => {
   const HandleClearCart = () => {
     setCounterInsideCart(0)
   }
-  console.log(counterInsideCart);
   return (
     <div className='cart'>
       <div className="cart__heading">Cart</div>

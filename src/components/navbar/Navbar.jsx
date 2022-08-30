@@ -13,8 +13,8 @@ const Navbar = ({counterInsideCart,setCounterInsideCart, price}) => {
   const [openCart, setOpenCart] = useState(false)
   return (
     <div className='navbar'>
-       {openCart && <Cart counterInsideCart={counterInsideCart} setCounterInsideCart={setCounterInsideCart} price={price}/>}
      <div className="wrapper">
+     {openCart && <Cart counterInsideCart={counterInsideCart} setCounterInsideCart={setCounterInsideCart} price={price}/>}
       <div className="right">  
         <div className="menu" onClick={()=>{ setOpenMenu(true)}}><img src={Menu} alt="menu" /></div>
         <a href='/' className="logo"><img src={Logo} alt="logo" /></a>

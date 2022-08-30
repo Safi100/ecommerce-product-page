@@ -1,6 +1,4 @@
-.navbar{
-    position: relative;
-}
+
 .navbar .wrapper,.navbar .right,.navbar .left{
     display: flex;
     align-items: center;
@@ -8,6 +6,7 @@
 .navbar .wrapper{
     justify-content: space-between;
     border-bottom: 1px solid var(--Grayish-blue);
+    position: relative;
 }
 .navbar .right{
     gap: 50px;

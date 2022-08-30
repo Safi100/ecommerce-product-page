@@ -3,7 +3,7 @@ import "./app.css"
 import Navbar from './components/navbar/Navbar'
 import ProductInfo from './components/productInfo/ProductInfo'
 import MobileSlider from './components/thumbnails/MobileSlider'
-
+import ProductThumbnails from './components/thumbnails/ProductThumbnails'
 const App = () => {
   const [counterInsideCart , setCounterInsideCart] = useState(0)
   const [price, setPrice] = useState(250)
@@ -24,7 +24,8 @@ const App = () => {
       price={priceAfterDiscount}
       />
       <MobileSlider/>
-      <div className='wrapper'>
+      <div className='wrapper large_screen'>
+       <ProductThumbnails />
        <ProductInfo
         price={price}
         discount_percentage={discount_percentage}
