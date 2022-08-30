@@ -12,7 +12,7 @@
     font-size: 12px;
 
 
-    margin-bottom: 2.4rem;
+    margin-bottom: 24px;
     line-height: 1;
 }
 .product_name{
@@ -78,8 +78,36 @@
     border: 0;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgb(255, 125, 26, 0.35);
+    cursor: pointer;
 }
 .btn_cart_logo{
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:900px) {
+    .buttons{
+        flex-direction: row;
+        gap: 15px;
+        margin: 30px 0;
+    }
+    .cart_counter{flex: 1;}
+    .add_to_cart{flex: 3;}
+    .cart_counter{margin: 0;}
+
+    .price_container{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .product_name{
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .description{
+        margin: 30px 0;
+    }
 }
