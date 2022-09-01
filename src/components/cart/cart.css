@@ -9,6 +9,7 @@
     left: 50%;
     transform: translateX(-50%);
     min-height: 251px;
+    box-shadow: 0px 2px 11px rgb(0 ,0 ,0, 0.3);
 }
 .cart__heading{
     font-weight: 700;
