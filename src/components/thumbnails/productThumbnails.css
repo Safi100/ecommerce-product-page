@@ -29,14 +29,19 @@
 .img__div.selected{
     border-color: var(--Orange);
 }
-.img__div img.selected__inside{
-    opacity: 0.3;
+
+.img__div:hover img{
+    opacity: 0.6;
 }
 .img__div img{
     width: 100px;
-
 }
-
+.img__div img.selected__inside{
+    opacity: 0.3;
+}
+.img__div img.selected__inside:hover{
+    opacity: 0.3;
+}
 @media screen and (min-width:900px) {
     .large_screen{
         display: flex;
