@@ -1,6 +1,6 @@
 .thumbnails{
     flex-direction: column;
-    gap: 40px;
+    gap: 35px;
     display: none;
     flex-basis: 50%;
 }
@@ -21,10 +21,20 @@
 }
 .img__div{
     cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    border: 3px solid transparent;
+}
+.img__div.selected{
+    border-color: var(--Orange);
+}
+.img__div img.selected__inside{
+    opacity: 0.3;
 }
 .img__div img{
     width: 100px;
-    border-radius: 10px;
+
 }
 
 @media screen and (min-width:900px) {
