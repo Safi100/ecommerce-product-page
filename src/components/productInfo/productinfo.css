@@ -48,6 +48,10 @@
     font-weight: 700;
     text-decoration: line-through;
 }
+.right{
+    display: flex;
+    align-items: center;
+}
 .cart_counter{
     display: flex;
     align-items: center;
