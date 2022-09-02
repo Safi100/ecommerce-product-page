@@ -71,3 +71,12 @@
         gap:10px;
     }
 }
+
+.pop_thumbnails{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 555;
+    max-width: 600px;
+}
