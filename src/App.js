@@ -33,7 +33,10 @@ const App = () => {
         setCounterInsideCart={setCounterInsideCart}
        />
       </div>
-      
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target={'_blank'}>Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/Safi100" target={'_blank'}>Safi Nafi</a>.
+      </div>
     </div>
   )
 }
