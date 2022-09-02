@@ -1,0 +1,41 @@
+.close{
+    display: flex;
+    justify-content: flex-end;
+}
+.close path{
+    fill: var(--White);
+    cursor: pointer;
+}
+.close path:hover{
+    fill: var(--Orange);
+}
+.thumbnails__slider__prev-btn,.thumbnails__slider__next-btn{
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.thumbnails__slider__prev-btn{
+    left: -20px;
+}
+.thumbnails__slider__next-btn{
+    right: -20px;
+}
+.thumbnails__slider-btn:hover svg path{
+    stroke: var(--Orange);
+}
+.selected_on_pop{
+    border-color: var(--Orange);
+    background-color: var(--White);
+}
+.Selected__photo__pop{
+    cursor: unset;
+}

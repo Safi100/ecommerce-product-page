@@ -3,12 +3,9 @@ import Blur from '../blur/Blur'
 import ProductThumbnailsPop from './ProductThumbnailsPop'
 import "./pop.css"
 
-const Pop = ({selected}) => {
+const Pop = ({selected, open, setOpen}) => {
   return (
-    <div className='pop'>
-     <Blur />
-     <ProductThumbnailsPop selected={selected}/> 
-    </div>
+     <ProductThumbnailsPop selected={selected} open={open} setOpen={setOpen}/> 
   )
 }
 

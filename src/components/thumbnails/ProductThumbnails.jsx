@@ -19,7 +19,7 @@ const ProductThumbnails = () => {
       <div className="group__photo">
         {Images.map((img, index) => (<div onClick={()=> setSelectedIndex(index)} className={`img__div ${(selectedIndex === index) ? "selected" : ""}`} key={index}><img className={`${(selectedIndex === index) ? "selected__inside" : ""}`} src={img} alt={`img${index}`} /></div>))}
       </div>
-      {open && <Pop selected={selectedIndex}/>}
+      {open && <Pop selected={selectedIndex} open={open} setOpen={setOpen}/>}
     </div>
   )
 }

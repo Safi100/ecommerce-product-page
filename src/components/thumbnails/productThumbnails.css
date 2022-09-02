@@ -8,7 +8,7 @@
     display: flex;
     cursor: pointer;
 }
-.Selected__photo img{
+.Selected__photo > img{
     width: 100%;
     border-radius: 10px;
 }
